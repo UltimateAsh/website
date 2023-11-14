@@ -1,0 +1,195 @@
+<!DOCTYPE html">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Achraf</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <a href="#Accueil" class="active">Accueil</a>
+            <a href="#A propos">A propos</a>
+            <a href="#Services">Compétences</a>
+            <a href="#Projets">Projets</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="home-content">
+        <h3>Bonjour, je suis</h3>
+        <h1>Achraf SOBHI</h1>
+        <h3>Je suis<span> étudiant</span></h3>
+        <p>Actuellement étudiant en deuxième année de classe préparatoire ingénieur à CESI Toulouse, 
+            je suis à la recherche d'une offre pour un stage en fin d'année qui me permettrait 
+            de viser un contrat d'alternance pour préparer mon entrée en cycle ingénieur en 2024. 
+        </p>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <a href="image/cv.pdf" download="Achraf_Sobhi_CV.pdf" class="btn">Télécharger mon CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="image/home.png" alt="">
+        </div>
+    </section>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">A propos de <span>moi</span></h1>
+                <p>Je me distingue par mon assiduité, ma rigueur et mon dynamisme. 
+                Je suis convaincu que mon engagement et ma détermination pourront être 
+                des atouts précieux pour votre entreprise.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Soft skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experiences</p>
+                    <p class="tab-links" onclick="opentab('education')"> Diplômes</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Communication</span><br>Capacité à communiquer efficacement à l'écrit et à l'oral ainsi que présenter les idées de manières claires</li>
+                        <li><span>Travail d'équipe</span><br>Sens de la coopération efficace</li>
+                        <li><span>Résolution de problèmes</span><br>Capacité à analyser des situations complexes et prendre une décision adéquate</li>
+                        <li><span>Intelligence émotionnelle</span><br>Conscience de soi ainsi que des relations interpersonnelles</li>
+                        <li><span>Plurilingues</span><br>Parle plusieurs langues dont :</li>
+                        <p>-le français</p>
+                        <p>-l'anglais (TOEIC:905 points)</p>
+                        <p>-quelques notions d'espagnols et japonais</p>
+                        <p>-l'arabe(langue maternelle)</p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Août 2023-Septembre 2023</span>
+                        <p><span>Juin 2022-Août 2022</span></p>
+                        <p>Plongeur dans une boucherie</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2024</span><br>Cycle préparotoire ingénieur à CESI Toulouse</li>
+                        <li><span>2020-2021</span><br>Baccalauréat (mention bien)</li>
+                        <li><span>2019-2020</span><br>B1 Preliminary English Test (Cambridge Assessment)</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-----langages-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Compétences en <span>programmation</span></h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bxs-copyright'></i>
+                <i class='bx bxl-c-plus-plus'></i>                
+                <h2>Langages de programmation de base : </h2>
+                <p>Cette catégorie regroupe <span>les langages de programmation fondamentaux</span> servant de base à de nombreux autres. </p>
+                    <p><span>Le langage C</span>, reconnu pour sa syntaxe efficace et son accès bas niveau à la mémoire, 
+                    est fréquemment employé dans le développement système et la programmation embarquée. </p>
+                    <p><span>Le C++</span> étend les fonctionnalités du C en introduisant la programmation orientée objet.</p>
+            </div>
+            <div>
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3'></i>
+                <i class='bx bxl-javascript' ></i>
+                <h2>Langages Web Frontend :</h2>
+                <p>Cette catégorie se focalise sur <span>les langages dédiés à la création de l'interface utilisateur et du contenu visuel des sites web</span>. </p>
+                <p>Le <span>HTML</span> fournit la structure de base du contenu web, décrivant la hiérarchie des éléments.</p> 
+                <p>Le <span>CSS </span> est utilisé pour styliser et mettre en page les pages web de manière esthétique.</p>
+                <p>Le <span>JavaScript</span>, un langage de programmation côté client, 
+                    permet d'ajouter des fonctionnalités interactives et dynamiques aux sites web, 
+                    améliorant ainsi l'expérience utilisateur.</p>
+            </div>
+            <div>
+                <i class='bx bxl-postgresql' ></i>
+                <i class='bx bxl-php' ></i>                <h2>Langages Web Backend :</h2>
+                <p>Ces langages sont utilisés pour le développement de la logique serveur, 
+                    la gestion des bases de données et le traitement des requêtes des utilisateurs. 
+                    PHP est un langage de script côté serveur largement utilisé pour la création de pages web dynamiques. 
+                    Symfony, un framework PHP, facilite le développement en fournissant une structure organisée et des fonctionnalités réutilisables.
+                    SQL (Structured Query Language) est utilisé pour interagir avec les bases de données, permettant le stockage, 
+                    , la récupération et la manipulation des données, souvent intégré dans le backend des applications web.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio de mes <span>projets</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/python.png">
+                <div class="layer">
+                    <h3>Projet python</h3>
+                    <p>Ce projet avait pour but de réaliser un 
+                        programme pyhton afin d'envoyer un message et de le recevoir 
+                        avec différentes étapes. </p>
+                    <a href="image/python.ipynb" download="python.ipynb"><i class='bx bxs-download'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/sql.png">
+                <div class="layer">
+                    <h3>Projet base de données</h3>
+                    <p>Ce projet avait pour but de réaliser une 
+                        base de données qui pourraît être utilisé par des scientifiques
+                    pour avoir un suivi sur la qualité de l'air dans différentes régions et au cours du temps. </p>                
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/arduino.png">
+                <div class="layer">
+                    <h3>Projet arduino</h3>
+                    <p>Ce projet avait pour but de réaliser un système
+                        qui a pour initiative majeure à récolter des données météorologiques
+                        pour la surveillance des océans. </p>     
+                    <a href="image/Arduino.zip" download="Arduino.zip"><i class='bx bxs-download'></i></a>           
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for (var tablink of tablinks) {  // Correction ici
+        tablink.classList.remove("active-link");}
+        for (var tabcontent of tabcontents) {  // Correction ici
+        tabcontent.classList.remove("active-tab");}
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
+
